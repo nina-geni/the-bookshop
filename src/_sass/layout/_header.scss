@@ -1,6 +1,6 @@
 header {
-    //border-bottom: 1px solid $accent;
     box-shadow: -1px 13px 23px -3px rgba(64,1,1,0.41);
+    margin-bottom: 50px;
 
     .header {
         align-items: center;
@@ -22,21 +22,24 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        ul {
-            list-style-type: none;
+        list-style-type: none;
             li {
                 a {
                     color: $text-color;
                     font-family: $title;
                     text-decoration: none;
                     font-size: 18px;
+                    transition: color 0.3s ease-in-out;
+                    transition: font-size 0.3s ease-in-out;
                 }
                 a:hover {
                     color: $call-to-action;
-                    
+                    font-size: 20px;
+                }
+                .active {
+                    color: $call-to-action;
+                    font-size: 20px;
                 }
             }
-        }
     }
 }

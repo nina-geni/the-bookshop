@@ -1,0 +1,15 @@
+.button {
+    background-color: $call-to-action;
+    color: $white;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-bottom: 25px;
+    transition: background-color 0.5s ease-in-out;
+}
+.button:hover {
+    background-color: $accent;
+}

@@ -10,28 +10,28 @@ const Header = ({ children }) => {
         <header>
             <div className="container">
                 <div className="row header">
-                    <div className="col-5">
+                    <div className="col-8">
                         <div className="image-home">
-                            <img src={logo} alt="logo"/>
+                            <h1><img src={logo} alt="logo"/></h1>
                         </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-4">
                         <nav>
                             <ul className="header_nav">
                                 <li>
-                                    <NavLink to={Routes.LANDING} >Home</NavLink>
+                                    <NavLink to={Routes.LANDING} activeClassName="active">Home</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to={Routes.BOEKEN} >Boeken</NavLink>
+                                    <NavLink to={Routes.BOEKEN} activeClassName="active">Boeken</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to={Routes.WINKELWAGEN} ><i class="fas fa-shopping-cart"></i></NavLink>
+                                    <NavLink to={Routes.LOGIN} activeClassName="active">Login</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to={Routes.LOGIN} >Login</NavLink>
+                                    <NavLink to={Routes.REGISTREREN} activeClassName="active">Registreer</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to={Routes.REGISTREREN} >Registreer</NavLink>
+                                    <NavLink to={Routes.WINKELWAGEN} activeClassName="active"><i class="fas fa-shopping-cart"></i></NavLink>
                                 </li>
                             </ul>
                         </nav>

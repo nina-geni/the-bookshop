@@ -1,15 +1,29 @@
 footer {
     box-shadow: -1px -12px 23px -3px rgba(64,1,1,0.41);
+    margin-top: 50px;
+   .footer {
+        align-items: center;
 
-    .footer_text {
-        p {
-            font-family: $text;
-            padding-top: 10px;
-            padding-bottom: 10px;
+        .footer_text {
+            p {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
         }
-    .footer_social {
-        font-size: 150px;
-    }
-    }
+        .footer_social {
+            display: flex;
+            justify-content: space-between;
 
+            i {
+                color: $text-color;
+                font-size: 18px;
+                transition: color 0.3s ease-in-out;
+                transition: font-size 0.3s ease-in-out;
+            }
+            i:hover {
+                color: $call-to-action;
+                font-size: 20px;
+            }
+        }
+   }
 }

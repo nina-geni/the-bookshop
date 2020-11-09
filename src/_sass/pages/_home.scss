@@ -1,0 +1,37 @@
+.home_contact {
+    display: flex;
+    justify-content: space-between;
+    
+    &_picture {
+        width: 50%;
+        height: 500px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &_info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        text-align: center;
+
+        &_high {
+            margin-top: 25px;
+            font-family: $title;
+            color: $text-color;
+            font-size: 18px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
