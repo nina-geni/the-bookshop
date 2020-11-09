@@ -4,9 +4,7 @@ import { useError } from '../Hooks';
 import { gql, useQuery } from '@apollo/client';
 
 import test from '../images/test.jpg';
-import { Link, useParams } from 'react-router-dom';
-
-import * as Routes from '../routes';
+import { useParams } from 'react-router-dom';
 
 const BOEKEN = gql`
     query boek($id: ID) {
@@ -53,7 +51,7 @@ const DetailBoekenPage = () => {
                     <p>{data.boek.auteur}</p>
                     <p>{data.boek.uitvoering} | {data.boek.taal}</p>
                     <h2>€ {data.boek.prijs}</h2>
-                    <a className="button">Toevoegen aan winkelkar</a>
+                    <button className="button" href="">Toevoegen aan winkelkar</button>
                     <p>{data.boek.beschrijving}</p>
                     <p>{data.boek.verschijningsdatum}</p>
                 </div>

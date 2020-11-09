@@ -9,6 +9,7 @@
     display: inline-block;
     margin-bottom: 25px;
     transition: background-color 0.5s ease-in-out;
+    border: none;
 }
 .button:hover {
     background-color: $accent;
