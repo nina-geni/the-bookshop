@@ -47,7 +47,7 @@ const BoekenPage = () => {
                     <div className="cards">
                         {
                             !loading && data.boeken.map(boek => (
-                                <div className="card">
+                                <div key={boek.id} className="card">
                                     <div className="card_picture">
                                         <img src={ test } alt="boekPicture"/>
                                     </div>

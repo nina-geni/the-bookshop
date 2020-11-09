@@ -9,9 +9,9 @@ const Footer = ({ children }) => {
                         <p>© Nina Genitello</p>
                     </div>
                     <div className="col-2 footer_social">
-                        <i class="fab fa-facebook-square"></i>
-                        <i class="fab fa-instagram-square"></i>
-                        <i class="fab fa-twitter-square"></i>
+                        <i className="fab fa-facebook-square"></i>
+                        <i className="fab fa-instagram-square"></i>
+                        <i className="fab fa-twitter-square"></i>
                     </div>
                 </div>
             </div>

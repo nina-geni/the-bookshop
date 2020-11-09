@@ -31,7 +31,7 @@ const Header = ({ children }) => {
                                     <NavLink to={Routes.REGISTREREN} activeClassName="active">Registreer</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to={Routes.WINKELWAGEN} activeClassName="active"><i class="fas fa-shopping-cart"></i></NavLink>
+                                    <NavLink to={Routes.WINKELWAGEN} activeClassName="active"><i className="fas fa-shopping-cart"></i></NavLink>
                                 </li>
                             </ul>
                         </nav>
