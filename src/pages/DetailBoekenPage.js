@@ -51,7 +51,7 @@ const DetailBoekenPage = () => {
                     <p>{data.boek.auteur}</p>
                     <p>{data.boek.uitvoering} | {data.boek.taal}</p>
                     <h2>€ {data.boek.prijs}</h2>
-                    <button className="button" href="">Toevoegen aan winkelkar</button>
+                    <button className="button">Toevoegen aan winkelkar</button>
                     <p>{data.boek.beschrijving}</p>
                     <p>{data.boek.verschijningsdatum}</p>
                 </div>
