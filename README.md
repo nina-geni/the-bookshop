@@ -1,3 +1,6 @@
+# Link naar netlify
+[Netlify](https://inspiring-fermat-64205c.netlify.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,0 +1,101 @@
+.shopcart_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+
+    &_pic {
+        width: 10%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &_info {
+        .high {
+            font-size: 18px;
+        }
+    }
+    &_quantity {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .high {
+            font-size: 18px;
+        }
+
+        i {
+            padding-left: 10px;
+            padding-right: 10px;
+            color: $text-color;
+        }
+        input {
+            border: 1px solid $accent;
+            padding: 10px;
+            font-family: $text;
+            outline: none;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+    }
+    &_delete {
+        i {
+            color: $text-color;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+        i:hover {
+            color: $call-to-action;
+        }
+    }
+}
+.shopcart_total {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+
+    .total {
+        font-size: 18px;
+        color: $text-color;
+        font-weight: bold;
+        font-family: $title;
+        padding-right: 10px;
+    }
+
+    &_price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .price {
+            font-size: 25px;
+            color: $call-to-action;
+            font-weight: bold;
+            font-family: $title;
+            padding-left: 10px;
+        }
+    }
+
+}
+.button_order {
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+        background-color: $call-to-action;
+        color: $white;
+        font-weight: bold;
+        padding: 10px 50px;
+        display: inline-block;
+        transition: background-color 0.5s ease-in-out;
+        text-decoration: none;
+    }
+    a:hover {
+        background-color: $accent;
+    }
+}

@@ -1,0 +1,17 @@
+.adres_form {
+    margin-bottom: 25px;
+}
+.button_betaal {
+    a {
+        background-color: $call-to-action;
+        color: $white;
+        font-weight: bold;
+        padding: 10px 50px;
+        display: inline-block;
+        transition: background-color 0.5s ease-in-out;
+        text-decoration: none;
+    }
+    a:hover {
+        background-color: $accent;
+    }
+}

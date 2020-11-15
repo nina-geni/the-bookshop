@@ -9,7 +9,7 @@
         padding: 25px;
         box-shadow: 0px 9px 26px 10px rgba(64,1,1,0.39);
         transition: transform 0.5s ease-in-out;
-        margin-bottom: 50px;
+        margin-bottom: 75px;
 
         &_picture {
             img {
@@ -33,10 +33,7 @@
                 background-color: $call-to-action;
                 color: $white;
                 font-weight: bold;
-                padding-top: 10px;
-                padding-left: 50px;
-                padding-right: 50px;
-                padding-bottom: 10px;
+                padding: 10px 50px;
                 opacity: 0;
                 display: inline-block;
                 transition: opacity 0.5s ease-in-out;
@@ -57,3 +54,19 @@
         }
     }
 }
+
+@media (max-width: 400px) {
+    .cards {
+        .card {
+                flex:0 0 15%;
+                &_info {
+                    &_title {
+                        font-size: 12px;
+                    }
+                    p {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }

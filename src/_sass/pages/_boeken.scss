@@ -1,0 +1,31 @@
+.filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    .boeken_categories {
+        display: block;
+        flex: 0 0 30%;
+        select {
+            width: 100%;
+            outline: none;
+        }
+    }
+    .boeken_uitvoering {
+        display: block;
+        flex: 0 0 30%;
+        select {
+            width: 100%;
+            outline: none;
+        }
+    }
+    .boeken_taal {
+        display: block;
+        flex: 0 0 30%;
+        select {
+            width: 100%;
+            outline: none;
+        }
+    }
+
+}
