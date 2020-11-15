@@ -4,8 +4,6 @@ import { useError } from '../Hooks';
 import { gql, useQuery } from '@apollo/client';
 import { Link } from 'react-router-dom';
 
-import test from '../images/test.jpg';
-
 import * as Routes from '../routes';
 
 import home from '../images/home.jpg';
