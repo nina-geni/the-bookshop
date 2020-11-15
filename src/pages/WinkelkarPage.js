@@ -17,21 +17,26 @@ const WinkelkarPage = () => {
             kar = [];
         }
 
-        const berekenTotaal = () => {
-            let totaalBedrag = 0;
-    
-            winkelmandje.forEach((item) => {
-                totaalBedrag += item.prijs * item.amount;
-            })
-    
-            return totaalBedrag;
-        }
+        let totaalBedrag = 0;
 
-        setTotaal(berekenTotaal())
+        kar.forEach((item) => {
+            totaalBedrag += item.prijs * item.amount;
+        })
+
+        setTotaal(totaalBedrag);
         setWinkelmandje(kar);
         setVernieuw(false);
     }, [vernieuw])
 
+    const berekenTotaal = () => {
+        let totaalBedrag = 0;
+
+        winkelmandje.forEach((item) => {
+            totaalBedrag += item.prijs * item.amount;
+        })
+
+        return totaalBedrag;
+    }
 
     return (
         <div className="container">
@@ -62,6 +67,8 @@ const WinkelkarPage = () => {
                                                 const artikel = winkelmandje.find((artikel) => artikel.id === item.id);
                                                 artikel.amount = item.amount;
                                                 localStorage.setItem('winkelmandje', JSON.stringify(winkelmandje));
+                                                setTotaal(berekenTotaal())
+
                                                 setVernieuw(true);
                                             }}></i>
                                             <input type="number" min="0" value={item.amount} onChange={(e) => {
@@ -72,6 +79,8 @@ const WinkelkarPage = () => {
                                                 const artikel = winkelmandje.find((artikel) => artikel.id === item.id);
                                                 artikel.amount = item.amount;
                                                 localStorage.setItem('winkelmandje', JSON.stringify(winkelmandje));
+                                                setTotaal(berekenTotaal())
+
                                                 setVernieuw(true);
                                             }}></i>
                                             <p className="high">€ {item.prijs}</p>
