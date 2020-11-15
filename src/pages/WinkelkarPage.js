@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 
 import * as Routes from '../routes';
 
-import test from '../images/test.jpg';
-
 const WinkelkarPage = () => {
     const [winkelmandje, setWinkelmandje] = useState([]);
     const [totaal, setTotaal] = useState(0);

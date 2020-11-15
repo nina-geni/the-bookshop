@@ -83,7 +83,7 @@ const EditBoekPage = () => {
             setBoekBeschrijving(data.boek.beschrijving);
             setBoekAuteur(data.boek.auteur);
             setBoekPrijs(data.boek.prijs);
-            setBoekVerschijvingsdatum(data.boek.boekVerschijningsdatum);
+            setBoekVerschijvingsdatum(data.boek.verschijningsdatum);
             setBoekCategories(data.boek.categories);
             setBoekAfbeelding(data.boek.afbeelding);
             setBoekTaal(data.boek.taal);
